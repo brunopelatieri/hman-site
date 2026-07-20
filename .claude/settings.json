@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(git mv *)",
+      "Bash(mv favicon.ico public/favicon.ico)",
+      "WebFetch(domain:brunogoulart.com.br)",
+      "Bash(echo \"exit=$?\")"
+    ]
+  }
+}
