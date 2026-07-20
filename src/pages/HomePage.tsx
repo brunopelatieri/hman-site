@@ -4,12 +4,18 @@ import { Faq } from "../components/Faq";
 import { ContactCta } from "../components/ContactCta";
 import { FAQ_HOME } from "../seo/meta";
 
-const DIFERENCIAIS = [
+const DIFERENCIAIS: { icon: string; title: string; text: string; href?: string; hrefLabel?: string }[] = [
   { icon: "📍", title: "Especialistas na região", text: "Conhecemos a realidade de quem vive de temporada em Águas de Lindóia e de quem vive do tricô em Monte Sião, além de atender bem Lindóia, Serra Negra, Socorro e Itapira." },
   { icon: "🏆", title: "Marcas líderes de mercado", text: "Trabalhamos com as principais marcas de câmeras e alarmes do Brasil, escolhidas conforme seu orçamento e a exigência do local." },
-  { icon: "📱", title: "Acesso remoto pelo celular", text: "Veja sua casa, pousada, loja ou fábrica de qualquer lugar do mundo, em tempo real." },
-  { icon: "🧹", title: "Instalação limpa e rápida", text: "Sem quebra-quebra, sem fio aparente." },
-  { icon: "⚖️", title: "Conformidade com a LGPD", text: "Orientamos a sinalização correta de área monitorada." },
+  { icon: "📱", title: "Acesso remoto pelo celular", text: "Veja sua casa, hotel, pousada, casa ou apartamento de temporada (Airbnb, VRBO, Booking.com), loja ou fábrica de qualquer lugar do mundo, em tempo real, pelo aplicativo no celular, tablet ou computador." },
+  { icon: "🧹", title: "Instalação limpa e rápida", text: "Sem quebra-quebra, sem fio aparente e sem sujeira pelo caminho. Passamos cabo embutido ou disfarçado, protegemos móveis e piso durante o serviço e deixamos o ambiente limpo ao final." },
+  {
+    icon: "⚖️",
+    title: "Conformidade com a LGPD",
+    text: "Orientamos a sinalização correta de área monitorada.",
+    href: "#faq-lgpd",
+    hrefLabel: "Entenda a relação com a LGPD",
+  },
   { icon: "🤝", title: "Orçamento sem compromisso", text: "Visita técnica, projeto e proposta sem custo." },
 ];
 
@@ -37,9 +43,9 @@ export function HomePage() {
   return (
     <>
       <Hero
-        title="CFTV e Alarmes em Águas de Lindóia e Monte Sião — Instalação, Manutenção e Suporte Real"
-        subtitle="Câmeras e alarmes para pousada, loja, fábrica, condomínio ou residência — com instalação cuidadosa, manutenção periódica e um time que continua disponível depois que a câmera já está na parede."
-        badge="Atendimento em Águas de Lindóia, Monte Sião, Lindóia, Serra Negra, Socorro e Itapira — sem taxa de deslocamento na região."
+        title="CFTV e Alarmes em Águas de Lindóia e Monte Sião: Instalação, Manutenção e Suporte Real"
+        subtitle="Câmeras e alarmes para hotéis, pousadas, casas e apartamentos de temporada (Airbnb, VRBO, Booking.com), lojas, malharias, comércio em geral, escolas, organizações, igrejas, condomínios, prédios e residências, com instalação cuidadosa, manutenção periódica e um time que continua disponível depois que a câmera já está na parede."
+        badge="Atendimento em Águas de Lindóia e Monte Sião, sem taxa de deslocamento, além de Lindóia, Serra Negra, Socorro e Itapira."
         bgImage="/images/hman_cftv_servicos_instalacao_banner.webp"
         bgAlt="Instalação de câmeras de segurança CFTV pela HMan em fachada na região de Águas de Lindóia"
         secondaryCta={{ label: "Pedir orçamento grátis em 2 minutos", href: "#contact-title" }}
@@ -54,7 +60,7 @@ export function HomePage() {
         <div className="container grid grid--4">
           <div className="stat">
             <span className="stat__value">6</span>
-            <span className="stat__label">cidades atendidas sem taxa de deslocamento</span>
+            <span className="stat__label">cidades atendidas na região</span>
           </div>
           <div className="stat">
             <span className="stat__value">24h</span>
@@ -79,7 +85,7 @@ export function HomePage() {
           <p style={{ maxWidth: 760 }}>
             Aqui, quem projeta é quem instala: o atendimento é feito diretamente por{" "}
             <Link className="inline-link" to="/sobre">Bruno Goulart, profissional de tecnologia
-            com mais de 18 anos de experiência</Link> — câmera, gravação e rede são a área de
+            com mais de 18 anos de experiência</Link>: câmera, gravação e rede são a área de
             origem dele, não um bico.
           </p>
           <div className="grid grid--3">
@@ -88,11 +94,14 @@ export function HomePage() {
                 <div className="card__icon" aria-hidden="true">{d.icon}</div>
                 <h3>{d.title}</h3>
                 <p>{d.text}</p>
+                {d.href && (
+                  <a className="inline-link" href={d.href}>{d.hrefLabel ?? "Saiba mais"}</a>
+                )}
               </article>
             ))}
           </div>
 
-          <h3 style={{ marginTop: 40 }}>Não é só instalar — é manter funcionando</h3>
+          <h3 style={{ marginTop: 40 }}>Não é só instalar: é manter funcionando</h3>
           <p style={{ maxWidth: 760 }}>
             A maior parte dos problemas de CFTV não aparece na instalação, aparece meses depois:
             cabo ressecado, conector oxidado, câmera desalinhada, fonte de alimentação queimada.
@@ -109,7 +118,7 @@ export function HomePage() {
             </article>
             <article className="card">
               <h3>Passagem e substituição de cabos</h3>
-              <p>Cabos se desgastam com sol, chuva e tempo — trocamos antes de virar falha de gravação.</p>
+              <p>Cabos se desgastam com sol, chuva e tempo, por isso trocamos antes de virar falha de gravação.</p>
             </article>
             <article className="card">
               <h3>Troca de conectores e fontes</h3>
@@ -128,7 +137,7 @@ export function HomePage() {
           <article style={{ marginBottom: 36 }}>
             <h3>Águas de Lindóia (SP): Segurança para quem vive de turismo</h3>
             <p>
-              Águas de Lindóia recebe turistas o ano inteiro — e onde há fluxo de gente de fora, há
+              Águas de Lindóia recebe turistas o ano inteiro, e onde há fluxo de gente de fora, há
               risco. Hotéis, pousadas e principalmente imóveis de aluguel por temporada (Airbnb,
               VRBO, Booking.com e sistemas de gestão como o Stays) precisam de duas coisas ao mesmo
               tempo: hóspede protegido e proprietário protegido.
@@ -141,8 +150,8 @@ export function HomePage() {
               <li>Dão segurança jurídica ao anfitrião em caso de acionamento de seguro ou disputa com plataforma.</li>
             </ul>
             <p className="note">
-              Ideal para: pousadas, hotéis, casas e apartamentos de temporada, prédios com locação
-              por curta duração.
+              Ideal para: hotéis, pousadas, casas e apartamentos de temporada (Airbnb, VRBO,
+              Booking.com), prédios com locação por curta duração.
             </p>
           </article>
 
@@ -166,7 +175,7 @@ export function HomePage() {
           <article style={{ marginBottom: 36 }}>
             <h3>Residências, condomínios e locais públicos</h3>
             <p>
-              Casa, prédio, condomínio, academia — qualquer lugar com fluxo de pessoas precisa de
+              Casa, prédio, condomínio, academia: qualquer lugar com fluxo de pessoas precisa de
               tudo filmado. Em caso de furto, roubo, agressão ou disputa, quem tem imagem tem prova.
             </p>
             <ul>
@@ -183,13 +192,13 @@ export function HomePage() {
               Circuito das Águas Paulista e o entorno da divisa SP/MG:
             </p>
             <ul>
-              <li><strong>Lindóia e Serra Negra:</strong> mesmo perfil turístico e de temporada de Águas de Lindóia — pousadas, hotéis e locação por plataforma.</li>
-              <li><strong>Socorro:</strong> turismo de aventura e temporada, com necessidade semelhante de segurança patrimonial em pousadas e comércio.</li>
+              <li><strong>Lindóia e Serra Negra:</strong> mesmo perfil turístico e de temporada de Águas de Lindóia, com hotéis, pousadas, casas e apartamentos de temporada (Airbnb, VRBO, Booking.com).</li>
+              <li><strong>Socorro:</strong> turismo de aventura e temporada, com necessidade semelhante de segurança patrimonial em hotéis, pousadas, casas e apartamentos de temporada (Airbnb, VRBO, Booking.com) e comércio.</li>
               <li><strong>Itapira:</strong> perfil mais comercial e residencial, com demanda por CFTV em lojas, condomínios e indústrias locais.</li>
             </ul>
             <p>
               Precisa de <Link className="inline-link" to="/eletrica">serviços elétricos em Águas de Lindóia, Monte Sião e região</Link>?
-              Também atendemos — do reparo pontual ao quadro de disjuntores completo.
+              Também atendemos, do reparo pontual ao quadro de disjuntores completo.
             </p>
           </article>
 
@@ -221,7 +230,7 @@ export function HomePage() {
           </div>
           <h3>Recomendação rápida por perfil</h3>
           <ul>
-            <li><strong>Residência / pousada pequena:</strong> Intelbras.</li>
+            <li><strong>Residência, pousada ou imóvel de temporada pequeno:</strong> Intelbras.</li>
             <li><strong>Loja de tricô / comércio de médio porte:</strong> Hikvision ou Dahua.</li>
             <li><strong>Fábrica / malharia / projeto corporativo:</strong> Axis, Bosch ou Hanwha Vision.</li>
           </ul>
@@ -232,39 +241,39 @@ export function HomePage() {
       <section className="section" aria-labelledby="alarmes-title">
         <div className="container">
           <span className="section__kicker">Alarmes</span>
-          <h2 id="alarmes-title">Alarmes para todo perfil — do básico ao conectado</h2>
+          <h2 id="alarmes-title">Alarmes para todo perfil: do básico ao conectado</h2>
           <p style={{ maxWidth: 760 }}>
             Assim como em câmeras, no alarme existe uma faixa que vai do sistema simples e sem fio
             até soluções com monitoramento 24h, aplicativo e automação. Ajudamos você a escolher o
-            nível certo para o seu caso — sem vender mais tecnologia do que você precisa.
+            nível certo para o seu caso, sem vender mais tecnologia do que você precisa.
           </p>
 
           <div className="grid grid--3">
             <article className="card">
               <h3>Entrada e custo-benefício</h3>
               <ul>
-                <li><strong>Intelbras</strong> — a porta de entrada mais comum no Brasil, com boa disponibilidade e integração por aplicativo.</li>
-                <li><strong>JFL</strong> — tradição em segurança eletrônica, com foco em robustez e boa relação preço/funcionalidade.</li>
-                <li><strong>Giga</strong> — opção acessível para quem quer um sistema funcional sem partir para o premium.</li>
-                <li><strong>Positivo Casa Segura</strong> — para quem busca praticidade e um app simples de usar.</li>
+                <li><strong>Intelbras</strong>: a porta de entrada mais comum no Brasil, com boa disponibilidade e integração por aplicativo.</li>
+                <li><strong>JFL</strong>: tradição em segurança eletrônica, com foco em robustez e boa relação preço/funcionalidade.</li>
+                <li><strong>Giga</strong>: opção acessível para quem quer um sistema funcional sem partir para o premium.</li>
+                <li><strong>Positivo Casa Segura</strong>: para quem busca praticidade e um app simples de usar.</li>
               </ul>
             </article>
             <article className="card">
               <h3>Nível intermediário</h3>
               <ul>
-                <li><strong>Intelbras (linhas IP e monitoradas)</strong> — sensores sem fio, app e comunicação por Ethernet ou Wi-Fi.</li>
-                <li><strong>JFL Active 32 Duo</strong> — mais zonas e recursos que os kits mais simples.</li>
-                <li><strong>Ajax</strong> — sobe o nível em tecnologia, automação e confiabilidade.</li>
-                <li><strong>Verisure</strong> — entra aqui quando o foco é monitoramento contratado, não só equipamento.</li>
+                <li><strong>Intelbras (linhas IP e monitoradas)</strong>: sensores sem fio, app e comunicação por Ethernet ou Wi-Fi.</li>
+                <li><strong>JFL Active 32 Duo</strong>: mais zonas e recursos que os kits mais simples.</li>
+                <li><strong>Ajax</strong>: sobe o nível em tecnologia, automação e confiabilidade.</li>
+                <li><strong>Verisure</strong>: entra aqui quando o foco é monitoramento contratado, não só equipamento.</li>
               </ul>
             </article>
             <article className="card">
               <h3>Sofisticado e IoT</h3>
               <ul>
-                <li><strong>Verisure</strong> — monitoramento 24h, sensores conectados, videomonitoramento e resposta profissional.</li>
-                <li><strong>Ajax</strong> — ecossistema inteligente, sensores sem fio e automação de ponta.</li>
-                <li><strong>Intelbras IP/monitoradas</strong> — acompanhamento em tempo real via app, ideal para projetos conectados.</li>
-                <li><strong>Soluções corporativas premium</strong> — monitoramento profissional e múltiplos canais de comunicação.</li>
+                <li><strong>Verisure</strong>: monitoramento 24h, sensores conectados, videomonitoramento e resposta profissional.</li>
+                <li><strong>Ajax</strong>: ecossistema inteligente, sensores sem fio e automação de ponta.</li>
+                <li><strong>Intelbras IP/monitoradas</strong>: acompanhamento em tempo real via app, ideal para projetos conectados.</li>
+                <li><strong>Soluções corporativas premium</strong>: monitoramento profissional e múltiplos canais de comunicação.</li>
               </ul>
             </article>
           </div>
@@ -295,7 +304,7 @@ export function HomePage() {
           <span className="section__kicker">Informática e Redes</span>
           <h2 id="pc-teaser-title">Também cuidamos do resto da sua estrutura de tecnologia</h2>
           <p style={{ maxWidth: 760 }}>
-            Câmera e alarme dependem de rede, cabo e computador funcionando bem — por isso também
+            Câmera e alarme dependem de rede, cabo e computador funcionando bem, por isso também
             oferecemos montagem e manutenção de computadores, redes cabeadas e wi-fi, formatação e
             instalação de sistemas, e uma especialidade em redes para hotéis e pousadas.
           </p>
@@ -318,7 +327,7 @@ export function HomePage() {
 
       {/* 9. Contato final */}
       <ContactCta
-        title="Proteja o que você construiu — hoje, não depois de um problema"
+        title="Proteja o que você construiu: aja hoje, não depois de um problema"
         text="Furto, roubo e prejuízo não avisam. Fale agora com quem entende a realidade de Águas de Lindóia, Monte Sião e região."
         secondaryLabel="Enviar e-mail"
       />

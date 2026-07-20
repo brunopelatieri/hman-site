@@ -10,15 +10,15 @@ export function Footer() {
           <div className="footer__brand">
             <img
               src="/images/hman_logo_rectangular.webp"
-              alt="HMan — serviços para sua casa e seu negócio"
+              alt="HMan, serviços para sua casa e seu negócio"
               width={180}
               height={48}
               loading="lazy"
             />
             <p>
-              <strong>HMan — {SITE.tagline}</strong>
+              <strong>HMan: {SITE.tagline}</strong>
               <br />
-              CFTV e alarmes, computadores e redes, elétrica e reparos gerais — instalação,
+              CFTV e alarmes, computadores e redes, elétrica e reparos gerais. Instalação,
               manutenção e suporte contínuo.
             </p>
           </div>
@@ -26,11 +26,11 @@ export function Footer() {
           <nav aria-label="Navegação do rodapé">
             <h3>Páginas</h3>
             <ul>
-              <li><Link to="/">Início — CFTV e Alarmes</Link></li>
+              <li><Link to="/">Início: CFTV e Alarmes</Link></li>
               <li><Link to="/pc">Computadores e Redes</Link></li>
               <li><Link to="/eletrica">Elétrica</Link></li>
               <li><Link to="/marido-de-aluguel">Marido de Aluguel</Link></li>
-              <li><Link to="/sobre">Quem atende — Bruno Goulart</Link></li>
+              <li><Link to="/sobre">Quem atende: Bruno Goulart</Link></li>
             </ul>
           </nav>
 

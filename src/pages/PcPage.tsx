@@ -47,7 +47,7 @@ export function PcPage() {
     <>
       <Hero
         title="Computadores e Redes em Águas de Lindóia e Monte Sião"
-        subtitle="Montagem, manutenção, cabeamento, wi-fi e redes bem dimensionadas — para residência, comércio, indústria e hotelaria. O mesmo cuidado técnico que aplicamos em CFTV, agora para toda a sua estrutura de tecnologia."
+        subtitle="Montagem, manutenção, cabeamento, wi-fi e redes bem dimensionadas para residência, comércio, indústria e hotelaria. O mesmo cuidado técnico que aplicamos em CFTV, agora para toda a sua estrutura de tecnologia."
         bgImage="/images/hman_computadores_redes_servicos_instalacao_banner.webp"
         bgAlt="Cabeamento de rede organizado em rack instalado pela HMan para comércio na região de Águas de Lindóia"
         secondaryCta={{ label: "Pedir orçamento grátis", href: "#contact-title" }}
@@ -60,7 +60,7 @@ export function PcPage() {
           <h2 id="servicos-title">Tudo que sua estrutura de tecnologia precisa, em um só lugar</h2>
           <p style={{ maxWidth: 760 }}>
             Quem atende é <Link className="inline-link" to="/sobre">Bruno Goulart, desenvolvedor
-            full stack com mais de 18 anos de experiência</Link> — computador, servidor e rede são
+            full stack com mais de 18 anos de experiência</Link>: computador, servidor e rede são
             o dia a dia profissional dele, do código ao cabo.
           </p>
           <div className="grid grid--2">
@@ -86,8 +86,8 @@ export function PcPage() {
           <p style={{ maxWidth: 760 }}>
             Rede de hóspede lenta ou instável gera reclamação, avaliação ruim e cancelamento.
             Dimensionamos a rede wi-fi e cabeada do seu hotel ou pousada para aguentar múltiplos
-            hóspedes conectados ao mesmo tempo, com cobertura em todas as áreas — quartos, área
-            comum e recepção — e prioridade correta entre rede de hóspede e rede
+            hóspedes conectados ao mesmo tempo, com cobertura em todas as áreas (quartos, área
+            comum e recepção) e prioridade correta entre rede de hóspede e rede
             administrativa/CFTV.
           </p>
           <p style={{ maxWidth: 760 }}>

@@ -46,7 +46,7 @@ export const LOCAL_BUSINESS_JSONLD = {
   name: SITE.name,
   slogan: SITE.tagline,
   description:
-    "CFTV e alarmes, computadores e redes, elétrica e reparos gerais — instalação, manutenção e suporte contínuo.",
+    "CFTV e alarmes, computadores e redes, elétrica e reparos gerais. Instalação, manutenção e suporte contínuo.",
   url: SITE.url,
   logo: `${SITE.url}/images/hman_logo_square.webp`,
   image: OG_IMAGE,
@@ -123,7 +123,24 @@ export const FAQ_HOME = [
   { q: "Quanto custa instalar CFTV ou alarme em Águas de Lindóia ou Monte Sião?", a: "O valor varia conforme número de câmeras/sensores, resolução e tipo de imóvel. Fazemos visita técnica gratuita e enviamos orçamento fechado." },
   { q: "Consigo ver as câmeras e o status do alarme pelo celular?", a: "Sim. Trabalhamos com sistemas com acesso remoto por aplicativo." },
   { q: "As câmeras funcionam à noite?", a: "Sim, com visão noturna infravermelho ou colorida de baixa luminosidade." },
-  { q: "É legal gravar minha loja, pousada ou condomínio?", a: "Sim, desde que a área monitorada esteja sinalizada e o uso das imagens respeite a LGPD. Orientamos a sinalização correta em toda instalação." },
+  {
+    id: "faq-lgpd",
+    q: "Câmera de segurança tem a ver com a LGPD (Lei de Proteção de Dados)?",
+    a: "Tem, sim. Imagem que permite identificar uma pessoa (rosto, placa de carro, entre outros) é dado pessoal pela LGPD, a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, art. 5º, inciso I): não é só CPF ou e-mail. Uma câmera de segurança captura e processa esse dado o tempo todo, o que gera obrigações reais para quem instala e para quem opera o sistema.",
+    details: {
+      colLabel: "Obrigação da LGPD",
+      colText: "O que isso significa na prática do CFTV",
+      table: [
+        { label: "Transparência (art. 6º, VI)", text: "A área monitorada precisa ter aviso visível (\"Local monitorado por câmeras\"). Sem isso, a captação é irregular." },
+        { label: "Finalidade específica (art. 6º, I)", text: "As imagens só podem ser usadas para o motivo declarado, como segurança patrimonial, não para outra coisa sem base legal." },
+        { label: "Necessidade (art. 6º, III)", text: "A câmera não deve mirar para dentro da casa do vizinho, janela de terceiros ou áreas sem relação com a finalidade de segurança." },
+        { label: "Retenção limitada (art. 15 e 16)", text: "A gravação não deve ficar armazenada indefinidamente sem justificativa; depois que a finalidade é cumprida, o dado deve ser eliminado." },
+        { label: "Compartilhamento (art. 7º)", text: "Repassar imagem para terceiros, como redes sociais ou \"grupo do bairro\", sem uma base legal prevista na lei pode gerar responsabilização." },
+      ],
+      outro:
+        "Ou seja, não é burocracia genérica: é orientação técnica real que evita que você, dono de pousada, loja ou condomínio, tome multa administrativa (art. 52) ou responda civilmente (art. 42) por uma instalação malfeita do ponto de vista jurídico. Por isso esse cuidado aparece como diferencial: mostra que o serviço vai além de \"pendurar câmera na parede\".",
+    },
+  },
   { q: "Vocês fazem manutenção de câmera já instalada por outra empresa?", a: "Sim. Fazemos revisão, ajuste de posição, troca de cabo, conector e fonte de alimentação em sistemas já existentes." },
   { q: "Qual a diferença entre um alarme básico e um alarme com monitoramento 24h?", a: "O básico dispara localmente (sirene/app); o monitorado aciona uma central que verifica e pode acionar apoio. Ajudamos a escolher o nível certo para o seu caso e orçamento." },
   { q: "Atendem apenas Águas de Lindóia e Monte Sião?", a: "Nosso foco é essas duas cidades, mas atendemos também Lindóia, Serra Negra, Socorro e Itapira." },
@@ -135,23 +152,23 @@ export const FAQ_PC = [
   { q: "Fazem rede para hotel pequeno, com poucos quartos?", a: "Sim, dimensionamos a rede para o tamanho real do seu negócio, de pousadas pequenas a hotéis maiores." },
   { q: "Trabalham com Windows e Linux?", a: "Sim, instalamos, formatamos e configuramos rede nos dois sistemas." },
   { q: "Montam computador para gravação de CFTV?", a: "Sim, dimensionamos o computador certo conforme número de câmeras, resolução e tempo de gravação necessário." },
-  { q: "Qual o prazo de um serviço de rede ou formatação?", a: "Depende do porte — após diagnóstico, você recebe prazo exato antes de aprovar o orçamento." },
+  { q: "Qual o prazo de um serviço de rede ou formatação?", a: "Depende do porte. Após diagnóstico, você recebe prazo exato antes de aprovar o orçamento." },
 ];
 
 export const FAQ_ELETRICA = [
-  { q: "Vocês emitem ART?", a: "Sim, quando o serviço exige — informamos antes se o seu caso precisa." },
+  { q: "Vocês emitem ART?", a: "Sim, quando o serviço exige. Informamos antes se o seu caso precisa." },
   { q: "O material está incluso no preço?", a: "Não, os valores são de mão de obra. Material é orçado à parte e você aprova antes de comprarmos." },
   { q: "Atendem urgência (sem luz, curto-circuito)?", a: "Sim, priorizamos chamados de risco (curto, cheiro de queimado, sem energia total)." },
   { q: "Fazem serviço em comércio, não só residência?", a: "Sim, atendemos lojas, pequenos comércios e escritórios." },
-  { q: "Qual a região de atendimento?", a: "Águas de Lindóia/SP, Monte Sião/MG e região — incluindo Lindóia, Serra Negra, Socorro e Itapira, no Circuito das Águas Paulista." },
+  { q: "Qual a região de atendimento?", a: "Águas de Lindóia/SP, Monte Sião/MG e região, incluindo Lindóia, Serra Negra, Socorro e Itapira, no Circuito das Águas Paulista." },
 ];
 
 export const FAQ_MARIDO = [
-  { q: "Preciso saber exatamente o que quero, ou vocês ajudam a decidir?", a: "Você pode chegar só com a lista de \"problemas\" — a gente avalia o que dá para resolver na mesma visita." },
+  { q: "Preciso saber exatamente o que quero, ou vocês ajudam a decidir?", a: "Você pode chegar só com a lista de \"problemas\": a gente avalia o que dá para resolver na mesma visita." },
   { q: "O material está incluso?", a: "Não, é orçado à parte e sempre aprovado por você antes da compra." },
   { q: "Fazem serviço elétrico e hidráulico na mesma visita?", a: "Sim, o pacote marido de aluguel é justamente para resolver tarefas de áreas diferentes numa visita só." },
   { q: "Atendem comércio, não só residência?", a: "Sim, atendemos pequenos comércios e escritórios também." },
-  { q: "Qual a região de atendimento?", a: "Águas de Lindóia/SP, Monte Sião/MG e região — incluindo Lindóia, Serra Negra, Socorro e Itapira, no Circuito das Águas Paulista." },
+  { q: "Qual a região de atendimento?", a: "Águas de Lindóia/SP, Monte Sião/MG e região, incluindo Lindóia, Serra Negra, Socorro e Itapira, no Circuito das Águas Paulista." },
 ];
 
 /* ---------------------------------------------------------------- */
@@ -164,7 +181,7 @@ export const ROUTES_META: Record<string, RouteMeta> = {
     title: "CFTV e Alarmes em Águas de Lindóia e Monte Sião",
     description:
       "Instalação, manutenção e suporte de CFTV e alarmes em Águas de Lindóia, Monte Sião e região. Segurança para pousadas, lojas, fábricas e residências.",
-    ogTitle: "HMan Segurança — CFTV e Alarmes em Águas de Lindóia e Monte Sião",
+    ogTitle: "HMan Segurança: CFTV e Alarmes em Águas de Lindóia e Monte Sião",
     ogDescription:
       "Câmeras e alarmes com instalação, manutenção e suporte contínuo. Atendimento em Águas de Lindóia, Monte Sião, Lindóia, Serra Negra, Socorro e Itapira.",
     ogImage: OG_IMAGE,
@@ -173,7 +190,7 @@ export const ROUTES_META: Record<string, RouteMeta> = {
       faqJsonLd(FAQ_HOME),
       servicesJsonLd(
         ["Instalação de CFTV", "Manutenção de CFTV", "Instalação de alarmes residenciais e comerciais", "Monitoramento remoto por aplicativo", "Troca de cabos, conectores e fontes de alimentação"],
-        "Segurança eletrônica — CFTV e alarmes",
+        "Segurança eletrônica: CFTV e alarmes",
       ),
     ],
   },
@@ -182,7 +199,7 @@ export const ROUTES_META: Record<string, RouteMeta> = {
     title: "Informática e Redes em Águas de Lindóia e Monte Sião",
     description:
       "Montagem de computadores, redes cabeadas e wi-fi, formatação Windows/Linux e suporte técnico. Especialistas em redes para hotéis. Atendimento local, orçamento grátis.",
-    ogTitle: "HMan PC & Redes — Informática e Redes em Águas de Lindóia e Monte Sião",
+    ogTitle: "HMan PC & Redes: Informática e Redes em Águas de Lindóia e Monte Sião",
     ogDescription:
       "Montagem, formatação, cabeamento de rede e wi-fi para residências, comércio, hotéis e pousadas. Consultoria de dimensionamento para cada necessidade.",
     ogImage: `${SITE.url}/images/hman_computadores_redes_servicos_instalacao_banner.webp`,
@@ -200,7 +217,7 @@ export const ROUTES_META: Record<string, RouteMeta> = {
     title: "Eletricista em Águas de Lindóia, Monte Sião e Região",
     description:
       "Serviços de elétrica residencial e comercial de pequeno porte: tomadas, disjuntores, chuveiro, iluminação e mais. Atendimento em Águas de Lindóia, Monte Sião e Circuito das Águas Paulista. Orçamento rápido.",
-    ogTitle: "HMan Elétrica — Serviços Elétricos em Águas de Lindóia e Monte Sião",
+    ogTitle: "HMan Elétrica: Serviços Elétricos em Águas de Lindóia e Monte Sião",
     ogDescription:
       "Do reparo pontual à instalação completa. Elétrica residencial e comercial com segurança, normas técnicas e preço claro por serviço.",
     ogImage: `${SITE.url}/images/hman_eletrica_servicos_instalacao_banner.webp`,
@@ -218,9 +235,9 @@ export const ROUTES_META: Record<string, RouteMeta> = {
     title: "Marido de Aluguel em Águas de Lindóia e Monte Sião",
     description:
       "Montagem de móveis, fixações, hidráulica leve, pintura e pequenos reparos. Marido de aluguel em Águas de Lindóia, Monte Sião e Circuito das Águas Paulista. Peça seu orçamento.",
-    ogTitle: "HMan Reparos — Marido de Aluguel em Águas de Lindóia e Monte Sião",
+    ogTitle: "HMan Reparos: Marido de Aluguel em Águas de Lindóia e Monte Sião",
     ogDescription:
-      "Aquela lista de pequenos reparos que fica sempre para depois? Resolvemos tudo numa visita só — fixações, hidráulica leve, móveis, pintura e mais.",
+      "Aquela lista de pequenos reparos que fica sempre para depois? Resolvemos tudo numa visita só: fixações, hidráulica leve, móveis, pintura e mais.",
     ogImage: `${SITE.url}/images/hman_marido_aluguel_servicos_instalacao_banner.webp`,
     jsonLd: [
       faqJsonLd(FAQ_MARIDO),
@@ -233,10 +250,10 @@ export const ROUTES_META: Record<string, RouteMeta> = {
   },
   "/sobre": {
     path: "/sobre",
-    title: "Quem está por trás da HMan — Bruno Goulart",
+    title: "Quem está por trás da HMan: Bruno Goulart",
     description:
       "A HMan é tocada por Bruno Pelatieri Goulart, profissional de tecnologia com 18+ anos de experiência. Cabeça de engenheiro na mão na massa: preço claro, serviço testado e documentado.",
-    ogTitle: "Quem está por trás da HMan — Bruno Goulart",
+    ogTitle: "Quem está por trás da HMan: Bruno Goulart",
     ogDescription:
       "Profissional de tecnologia com 18+ anos de experiência atendendo CFTV, redes, elétrica e reparos em Águas de Lindóia, Monte Sião e Circuito das Águas.",
     ogImage: OG_IMAGE,

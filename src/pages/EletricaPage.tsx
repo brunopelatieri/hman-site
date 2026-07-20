@@ -22,7 +22,7 @@ const TOMADAS: PriceRow[] = [
   { service: "Interruptor paralelo/three-way", included: "Adequação de fiação entre caixas, instalação e teste em múltiplos pontos", price: "R$ 80–150 por circuito" },
   { service: "Troca/instalação de tomada 110/220V", included: "Checagem de bitola, aterramento e tensão, ligação correta, teste com carga", price: "R$ 40–70 por unidade" },
   { service: "Tomada dupla/múltipla", included: "Troca de suporte/espelho, adequação de fiação, teste de todos os encaixes", price: "R$ 60–90 por unidade" },
-  { service: "Tomada de rede (RJ45) — ponto físico", included: "Crimpagem de cabo, montagem da tomada, teste de conexão", price: "R$ 60–100 por ponto" },
+  { service: "Tomada de rede (RJ45), ponto físico", included: "Crimpagem de cabo, montagem da tomada, teste de conexão", price: "R$ 60–100 por ponto" },
   { service: "Ponto de rede completo (passagem de cabo)", included: "Passagem por conduíte/aparente, fixação, terminação nas duas pontas, teste", price: "R$ 90–180 por ponto" },
 ];
 
@@ -65,8 +65,8 @@ export function EletricaPage() {
     <>
       <Hero
         title="Eletricista Residencial e Comercial em Águas de Lindóia e Monte Sião"
-        subtitle="De uma lâmpada trocada a um quadro de disjuntores novo — serviço elétrico com preço claro, segurança e atendimento rápido em Águas de Lindóia, Monte Sião e todo o Circuito das Águas Paulista."
-        badge="Preço por serviço, sem letra miúda — você sabe o que vai pagar antes de fecharmos."
+        subtitle="De uma lâmpada trocada a um quadro de disjuntores novo, serviço elétrico com preço claro, segurança e atendimento rápido em Águas de Lindóia, Monte Sião e todo o Circuito das Águas Paulista."
+        badge="Preço por serviço, sem letra miúda: você sabe o que vai pagar antes de fecharmos."
         bgImage="/images/hman_eletrica_servicos_instalacao_banner.webp"
         bgAlt="Eletricista da HMan trabalhando com EPI em quadro de disjuntores residencial organizado"
         secondaryCta={{ label: "Ver tabela de serviços e preços", href: "#iluminacao-title" }}
@@ -81,7 +81,7 @@ export function EletricaPage() {
             Todo atendimento é feito com uso de EPI (equipamento de proteção individual), seguindo
             as normas técnicas da ABNT (NBR 5410 para instalações elétricas de baixa tensão) e,
             quando o serviço exige, com emissão de ART (Anotação de Responsabilidade Técnica) por
-            profissional habilitado. Instalação elétrica malfeita não é só risco de defeito — é
+            profissional habilitado. Instalação elétrica malfeita não é só risco de defeito, é
             risco de incêndio e choque. Fazemos direito da primeira vez.
           </p>
         </div>
@@ -189,7 +189,7 @@ export function EletricaPage() {
       {/* 12. Contato final */}
       <ContactCta
         title="Elétrica bem feita não é gasto, é prevenção"
-        text="Fio solto, tomada quente e disjuntor que desarma sozinho são avisos — não espere virar problema maior."
+        text="Fio solto, tomada quente e disjuntor que desarma sozinho são avisos. Não espere virar problema maior."
         secondaryLabel="Pedir orçamento por e-mail"
       />
     </>

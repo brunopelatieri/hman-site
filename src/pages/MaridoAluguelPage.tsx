@@ -70,7 +70,7 @@ export function MaridoAluguelPage() {
     <>
       <Hero
         title="Marido de Aluguel em Águas de Lindóia e Monte Sião"
-        subtitle="Aquela lista de pequenos reparos que vive adiada — prateleira, suporte de TV, torneira pingando, porta que emperra. Resolvemos tudo numa visita só, com preço claro por serviço."
+        subtitle="Aquela lista de pequenos reparos que vive adiada: prateleira, suporte de TV, torneira pingando, porta que emperra. Resolvemos tudo numa visita só, com preço claro por serviço."
         bgImage="/images/hman_marido_aluguel_servicos_instalacao_banner.webp"
         bgAlt="Profissional da HMan instalando suporte de TV na parede em residência em Águas de Lindóia"
         secondaryCta={{ label: "Ver pacote de reparos", href: "#pacote-title" }}
@@ -84,12 +84,12 @@ export function MaridoAluguelPage() {
           <p style={{ maxWidth: 760 }}>
             <strong style={{ color: "#ffc400" }}>
               Até 2 horas de serviços diversos (elétrica leve, hidráulica leve, instalações na
-              parede), cobrindo até 5 tarefas pequenas — a partir de R$ 180 + materiais.
+              parede), cobrindo até 5 tarefas pequenas, a partir de R$ 180 + materiais.
             </strong>
           </p>
           <p style={{ maxWidth: 760 }}>
             Ideal para quem tem aquela listinha: 1 prateleira, 1 torneira, 1 quadro na parede, 1
-            dobradiça ajustada — tudo numa visita só, sem pagar deslocamento e diagnóstico separado
+            dobradiça ajustada: tudo numa visita só, sem pagar deslocamento e diagnóstico separado
             para cada item.
           </p>
         </div>
@@ -134,7 +134,7 @@ export function MaridoAluguelPage() {
           <PriceTable rows={ELETRO} />
           <p className="note" style={{ marginTop: 16 }}>
             Precisa de um ponto elétrico novo, chuveiro ou quadro de disjuntores? Isso é serviço da
-            nossa página de <Link className="inline-link" to="/eletrica">Elétrica</Link> — mesma
+            nossa página de <Link className="inline-link" to="/eletrica">Elétrica</Link>, mesma
             equipe, mesmo padrão de preço claro.
           </p>
           <img

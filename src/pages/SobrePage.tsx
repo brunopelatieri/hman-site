@@ -5,11 +5,11 @@ import { FOUNDER, whatsappLink } from "../config/site";
 const RIGOR = [
   {
     title: "Orçamento por escrito, antes de começar",
-    text: "Você sabe o que vai pagar e o que está incluso antes de qualquer serviço iniciar — hábito de quem passou a carreira escrevendo especificações.",
+    text: "Você sabe o que vai pagar e o que está incluso antes de qualquer serviço iniciar, hábito de quem passou a carreira escrevendo especificações.",
   },
   {
     title: "Serviço testado antes de entregar",
-    text: "Câmera gravando, tomada com carga, torneira sem vazamento. Nada é dado como pronto sem teste — como um código que só sobe depois de aprovado.",
+    text: "Câmera gravando, tomada com carga, torneira sem vazamento. Nada é dado como pronto sem teste, assim como um código que só sobe depois de aprovado.",
   },
   {
     title: "Documentação do que foi feito",
@@ -17,7 +17,7 @@ const RIGOR = [
   },
   {
     title: "Diagnóstico antes de vender",
-    text: "Primeiro entender o problema real, depois propor a solução — nunca o contrário. Sem empurrar equipamento ou serviço que você não precisa.",
+    text: "Primeiro entender o problema real, depois propor a solução, nunca o contrário. Sem empurrar equipamento ou serviço que você não precisa.",
   },
 ];
 
@@ -31,7 +31,7 @@ export function SobrePage() {
           <div className="hero__inner">
             <h1 id="sobre-title">Quem está por trás da HMan</h1>
             <p className="hero__subtitle">
-              Muito prazer — sou <strong>{FOUNDER.name}</strong>, profissional de tecnologia com
+              Muito prazer, sou <strong>{FOUNDER.name}</strong>, profissional de tecnologia com
               mais de 18 anos de experiência. A HMan é onde coloco essa bagagem para trabalhar
               dentro da sua casa e do seu negócio.
             </p>
@@ -65,7 +65,7 @@ export function SobrePage() {
           <div className="about__text">
             <h2 id="historia-title">De código a cabo de rede: por que a HMan existe</h2>
             <p>
-              Trabalho com tecnologia desde 2006 — sou desenvolvedor full stack e especialista em
+              Trabalho com tecnologia desde 2006, sou desenvolvedor full stack e especialista em
               automação com inteligência artificial. Foi essa trajetória que me trouxe até aqui:
               câmera de segurança, rede, computador e infraestrutura elétrica são, literalmente, a
               minha área. A HMan nasceu para atender a região onde vivo com o mesmo padrão técnico
@@ -74,7 +74,7 @@ export function SobrePage() {
             <p>
               E os reparos gerais? Entram pelo mesmo motivo: quem procura um serviço bem feito não
               quer três telefones diferentes. Elétrica, hidráulica leve, montagem e fixação são
-              trabalhos que faço com a mesma disciplina de engenharia — medido, testado e entregue
+              trabalhos que faço com a mesma disciplina de engenharia: medido, testado e entregue
               funcionando.
             </p>
             <p>
@@ -131,7 +131,7 @@ export function SobrePage() {
               <h3>Minha especialidade de origem</h3>
               <p>
                 <Link className="inline-link" to="/">CFTV e alarmes</Link> e{" "}
-                <Link className="inline-link" to="/pc">computadores e redes</Link> — aqui você é
+                <Link className="inline-link" to="/pc">computadores e redes</Link>: aqui você é
                 atendido por alguém que projeta e mantém infraestrutura de tecnologia
                 profissionalmente. Câmera, gravação, rede wi-fi de hotel, servidor: é o meu mundo.
               </p>
@@ -140,7 +140,7 @@ export function SobrePage() {
               <h3>Com o mesmo rigor</h3>
               <p>
                 <Link className="inline-link" to="/eletrica">Elétrica residencial e comercial</Link>{" "}
-                e <Link className="inline-link" to="/marido-de-aluguel">reparos gerais</Link> —
+                e <Link className="inline-link" to="/marido-de-aluguel">reparos gerais</Link>,
                 preço claro por serviço, normas técnicas, EPI e teste final. A tabela de preços
                 publicada no site é o compromisso: sem surpresa na hora de pagar.
               </p>
@@ -148,7 +148,7 @@ export function SobrePage() {
           </div>
           <p className="note" style={{ marginTop: 20 }}>
             Sua empresa também precisa de site, sistema ou automação com IA? Isso eu atendo pela
-            minha marca pessoal — fale comigo pelo{" "}
+            minha marca pessoal, fale comigo pelo{" "}
             <a className="inline-link" href={FOUNDER.site} target="_blank" rel="noopener">
               brunogoulart.com.br
             </a>
