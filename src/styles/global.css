@@ -190,9 +190,9 @@ a { color: inherit; text-decoration: none; }
 .header__logo img {
   height: 42px;
   width: auto;
-  background: var(--color-light);
-  padding: 4px 10px;
-  border-radius: 8px;
+  /*background: var(--color-light);*/
+  padding: 0px 10px;
+  /* border-radius: 8px; */
   box-sizing: content-box;
 }
 
@@ -527,12 +527,12 @@ a { color: inherit; text-decoration: none; }
 }
 
 .footer__brand img {
-  height: 48px;
-  width: auto;
-  margin-bottom: 12px;
-  background: var(--color-light);
-  padding: 6px 12px;
-  border-radius: 8px;
+  /* height: 48px;
+  width: auto; */
+  margin: 12px auto;
+  /* background: var(--color-light); */
+  padding: 0px;
+  /* border-radius: 8px; */
   box-sizing: content-box;
 }
 

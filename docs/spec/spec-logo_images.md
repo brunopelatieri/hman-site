@@ -83,7 +83,7 @@ local das images:
 public/images/
 
 Logo HMan:
- - retangular - principal para o site header: hman_logo_rectangular.webp
+ - retangular - principal para o site header: hman_logo_rectangular_.webp
  - quadrada - caso precise utilizar: hman_logo_square.webp
  - og-image: og-image.web
 

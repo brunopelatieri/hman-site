@@ -27,6 +27,15 @@ export function SobrePage() {
     <>
       {/* Hero da página Sobre */}
       <section className="hero" aria-labelledby="sobre-title">
+        <img
+          src="/images/hman_banner_about_sobre.webp"
+          alt="Rede de conexões tecnológicas em dourado sobre fundo escuro, simbolizando a base de tecnologia por trás da HMan"
+          className="hero__bg"
+          fetchPriority="high"
+          decoding="async"
+          width={1500}
+          height={500}
+        />
         <div className="container">
           <div className="hero__inner">
             <h1 id="sobre-title">Quem está por trás da HMan</h1>

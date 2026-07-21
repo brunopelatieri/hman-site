@@ -25,7 +25,7 @@ export function Header() {
       <div className="container header__inner">
         <NavLink to="/" className="header__logo" aria-label="HMan: página inicial" onClick={() => setOpen(false)}>
           <img
-            src="/images/hman_logo_rectangular.webp"
+            src="/images/hman_logo_rectangular_white.webp"
             alt="HMan, serviços para sua casa e seu negócio"
             width={160}
             height={42}

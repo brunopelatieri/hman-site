@@ -9,10 +9,9 @@ export function Footer() {
         <div className="footer__grid">
           <div className="footer__brand">
             <img
-              src="/images/hman_logo_rectangular.webp"
+              src="/images/hman_logo_rectangular_white.webp"
               alt="HMan, serviços para sua casa e seu negócio"
-              width={180}
-              height={48}
+              width={300}
               loading="lazy"
             />
             <p>
